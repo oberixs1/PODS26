@@ -4,6 +4,168 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+/* Facts Section
+--------------------------------*/
+
+li{
+  list-style: none;
+}
+
+/*---------------------
+  Services Section
+-----------------------*/
+
+.services-circle {
+  position: relative;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-list li {
+  margin-bottom: 85px;
+  position: relative;
+  z-index: 2;
+}
+
+.service-list li:last-child {
+  margin-bottom: 0;
+}
+
+.service-list .sl-icon {
+  width: 87px;
+  height: 87px;
+  background: #25ae88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.service-list .sl-content {
+  padding-left: 129px;
+}
+
+.service-list .sl-content h4 {
+  margin-bottom: 15px;
+}
+
+.service-list .sl-content p {
+  margin-bottom: 0;
+}
+
+.service-list.service-list-left .sl-icon {
+  float: right;
+  padding-left: 0;
+}
+
+.service-list.service-list-left .sl-content {
+  text-align: left;
+  padding-right: 129px;
+  padding-left: 0;
+}
+
+.service-list.service-list-left li:nth-child(1) {
+  right: 4px;
+  width: 490px;
+}
+
+.service-list.service-list-left li:nth-child(2) {
+  right: 80px;
+}
+
+.service-list.service-list-left li:nth-child(3) {
+  right: 0;
+}
+
+.service-list.service-list-right li:nth-child(1) {
+  left: -20px;
+  width: 490px;
+}
+
+.service-list.service-list-right li:nth-child(2) {
+  left: 80px;
+}
+
+.service-list.service-list-right li:nth-child(3) {
+  left: 0;
+}
+
+      .img-container {
+        text-align: center;
+      }
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+
+#facts {
+  background: #f7f7f7;
+  padding: 80px 0 60px 0;
+}
+
+#facts .counters span {
+  font-size: 48px;
+  display: block;
+  color: #2dc997;
+}
+
+#facts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -93,15 +255,132 @@
   min-height: 35rem;
   padding: 15rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+      background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#bg_image{
+  color : #46A28B;
+  background-color:#46A28B; 
+}
+
+/*---------------------
+  Services Section
+-----------------------*/
+
+.services-circle {
+  position: relative;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-list li {
+  margin-bottom: 85px;
+  position: relative;
+  z-index: 2;
+}
+
+.service-list li:last-child {
+  margin-bottom: 0;
+}
+
+.service-list .sl-icon {
+  width: 87px;
+  height: 87px;
+  background: #25ae88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.service-list .sl-content {
+  padding-left: 129px;
+}
+
+.service-list .sl-content h4 {
+  margin-bottom: 15px;
+}
+
+.service-list .sl-content p {
+  margin-bottom: 0;
+}
+
+.service-list.service-list-left .sl-icon {
+  float: right;
+  padding-left: 0;
+}
+
+.service-list.service-list-left .sl-content {
+  text-align: right;
+  padding-right: 129px;
+  padding-left: 0;
+}
+
+.service-list.service-list-left li:nth-child(1) {
+  right: 4px;
+  width: 490px;
+}
+
+.service-list.service-list-left li:nth-child(2) {
+  right: 80px;
+}
+
+.service-list.service-list-left li:nth-child(3) {
+  right: 0;
+}
+
+.service-list.service-list-right li:nth-child(1) {
+  left: -20px;
+  width: 490px;
+}
+
+.service-list.service-list-right li:nth-child(2) {
+  left: 80px;
+}
+
+.service-list.service-list-right li:nth-child(3) {
+  left: 0;
+}
+
+.service-main-circle {
+  position: absolute;
+  width: 477px;
+  height: 477px;
+  border: 3px solid #25ae88;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -238.5px;
+  background: rgba(255, 255, 255, 0.21);
+  text-align: center;
+  padding-top: 120px;
+}
+
+
 .masthead h1 {
-  font-family: 'Varela Round';
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -142,7 +421,7 @@
   -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: 'Varela Round';
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: .15rem;
@@ -222,7 +501,7 @@
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
-  font-family: 'Varela Round';
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -240,7 +519,7 @@
 
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: 'Varela Round';
+  font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
@@ -274,7 +553,7 @@
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: 'SourceSansPro';
   letter-spacing: 0.0625em;
 }
 
