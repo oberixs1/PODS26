@@ -140,7 +140,7 @@ header .overlay {
 @media (pointer: coarse) and (hover: none) {
   header {
    /* background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;*/
-    background-image: ("novideo.png");
+    background-image: ("img/novideo.png");
   }
   header video {
     display: none;
@@ -166,6 +166,17 @@ header .overlay {
   font-size: 14px;
 }
 
+#mainNav > img{
+  background: white !important;
+}
+@media only screen and (max-width: 767px) {
+   #nav.nav-transparent .navbar-brand .logo-alt {
+       display: none !important;
+   }
+   #nav.nav-transparent .navbar-brand .logo {
+       display: block !important;
+   }
+}
 
 #mainNav {
   min-height: 56px;
@@ -194,12 +205,12 @@ header .overlay {
   outline: none;
   background-color: transparent;
 }
-
+/*
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
   background-color: transparent;
 }
-
+*/
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
@@ -247,6 +258,7 @@ header .overlay {
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
+
 }
 
 .masthead {

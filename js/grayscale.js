@@ -34,9 +34,19 @@
       $("#mainNav").removeClass("navbar-shrink");
     }
   };
+
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
+  // Initiate the wowjs
+  new WOW().init();
+
+  // jQuery counterUp
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
 
 })(jQuery); // End of use strict
