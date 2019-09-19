@@ -519,6 +519,24 @@ header .overlay {
 
 }*/
 
+.image_full{
+   display:inline;
+  }
+
+ .image_mobile{
+  display:none;
+ }
+
+@media (max-width: 640px) and (min-width: 320px){
+  .image_full{
+   display:none;
+  }
+
+  .image_mobile{
+   display:inline;
+  }
+}
+
 .signup-section {
   padding: 10rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
