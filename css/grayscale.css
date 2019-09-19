@@ -504,8 +504,20 @@ header .overlay {
     border-color: #64a19d;
     border-width: .25rem;
     width: 30%;
-  }
+  } 
 }
+/*
+.videomv {
+  width: 20%;
+}
+
+@media (max-width: 600px){
+
+  .videomv {
+    width: 60%;
+  }
+
+}*/
 
 .signup-section {
   padding: 10rem 0;
